@@ -1,4 +1,4 @@
-GET http://localhost:300/
+GET http://localhost:300/hello
 
 ###
 
@@ -17,6 +17,22 @@ POST http://localhost:300/
 Content-Type: application/json
 
 {
-    "username": "ali",
-    "password": "password"
+    "username": "mirul",
+    "password": "1234",
 }
+
+###
+POST http://localhost:300/login
+Content-Type: application/json
+
+{
+    "username": "mirul",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:300/register
+Authorization: : bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1pcnVsb2xvIiwicGFzc3dvcmQiOiIxMjM0IiwibmFtZSI6Im1pcnVsb2xvIiwiZW1haWwiOiJhbGlAdXRlbS5jb20iLCJpYXQiOjE2ODExMTIwMjgsImV4cCI6MTY4MTExNTYyOH0.tKEpf-jTCLLeJuerFUffQl1lEqPRW5UQyaR9H65JkUo.eyJ1c2VybmFtZSI6Im1pcnVsIiwicGFzc3dvcmQiOiIxMjM0IiwibmFtZSI6Im1pcnVsb2xvIiwiZW1haWwiOiJhbGlAdXRlbS5jb20iLCJpYXQiOjE2ODExMTIwMjgsImV4cCI6MTY4MTExNTYyOH0.nNNjjrcI5vPd7fOZF2pqbtYeygS0XePcmsP7CM4Dsls.eyJ1c2VybmFtZSI6Im1pcnVsIiwicGFzc3dvcmQiOiIxMjM0IiwibmFtZSI6ImFsaSIsImVtYWlsIjoiYWxpQHV0ZW0uY29tIiwiaWF0IjoxNjgxMTEwMTczLCJleHAiOjE2ODExMTM3NzN9.bQawD7FKm29bVkL4VTRAHA1WE3Z0uQsDta5t8Gb2w4c
+
+
